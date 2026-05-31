@@ -104,3 +104,23 @@ plt.savefig('visualisasi_regresi.png', dpi=150, bbox_inches='tight')
 plt.show()
 
 print("Plot berhasil disimpan sebagai 'visualisasi_regresi.png'")
+
+# Print output 
+print("\n" + "=" * 55)
+print("MATRIKS A^T * A - ukuran 2x2")
+print("=" * 55)
+print(f"  [ {AtA[0,0]:>10.4f}   {AtA[0,1]:>10.4f} ]")
+print(f"  [ {AtA[1,0]:>10.4f}   {AtA[1,1]:>10.4f} ]")
+
+print("\n" + "=" * 55)
+print("VEKTOR A^T * b - ukuran 2x1")
+print("=" * 55)
+print(f"  [ {Atb[0]:>12.4f} ]")
+print(f"  [ {Atb[1]:>12.4f} ]")
+
+print("\n" + "=" * 55)
+print("SOLUSI x_hat = (A^T A)^-1 * A^T b")
+print("=" * 55)
+print(f"  x_hat = [ β̂₀ ]  =  [ {beta0_hat:.4f} ]")
+print(f"          [ β̂₁ ]     [ {beta1_hat:.4f} ]")
+print(f"\n  Persamaan regresi: ŷ = {beta0_hat:.4f} + {beta1_hat:.4f}x")
